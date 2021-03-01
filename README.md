@@ -18,7 +18,7 @@ Please avoid using patterns/libraries that overlap the purpose of the existing o
 
 The priority of the tasks goes from MUST (High Priority) to COULD (Nice to have)
 
-- The user must be able to view a table of projects. Each project must have an `id`, `name`, `author`, `start_date`, `end_date`
+- The user must be able to view a table of projects. Each project must have an `id`, `title`, `author`, `start_date`, `end_date`
 
 - The user must be able to delete a project
 

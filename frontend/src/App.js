@@ -6,7 +6,6 @@ import { withTheme } from "@material-ui/core/styles";
 import ProjectsList from "./app/features/ProjectsList";
 
 const App = (props) => {
-  console.log(props);
   return (
     <Wrapper>
       <Content>
