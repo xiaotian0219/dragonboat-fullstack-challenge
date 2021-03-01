@@ -1,0 +1,24 @@
+import React, { useEffect } from "react";
+
+import { useSelector, useDispatch } from "react-redux";
+
+import { fetchProjects as fetchProjectsAction } from "../../store/projects/actions";
+import { selectProjects } from "../../store/projects/selectors";
+
+const container = (Component) => {
+  return (props) => {
+    const dispatch = useDispatch();
+
+    const fetchProjects = () => dispatch(fetchProjectsAction());
+
+    const projects = useSelector((state) => selectProjects(state));
+
+    useEffect(() => {
+      fetchProjects();
+    }, []);
+
+    return <Component {...props} projects={projects} />;
+  };
+};
+
+export default container;
