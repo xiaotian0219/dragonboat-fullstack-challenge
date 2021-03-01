@@ -7,7 +7,7 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_PROJECTS_FULFILLED: {
+    case FETCH_PROJECT_FULFILLED: {
       const data = action.payload || [];
       return {
         ...state,
@@ -15,7 +15,7 @@ const reducer = (state = initialState, action) => {
         ids: data.map((p) => p.id),
       };
     }
-    case FETCH_PROJECT_FULFILLED: {
+    case FETCH_PROJECTS_FULFILLED: {
       const data = action.payload;
 
       if (!data) return state;

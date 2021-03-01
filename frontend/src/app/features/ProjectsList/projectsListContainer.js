@@ -15,6 +15,7 @@ const container = (Component) => {
 
     useEffect(() => {
       fetchProjects();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return <Component {...props} projects={projects} />;

@@ -33,3 +33,4 @@ The priority of the tasks goes from MUST (High Priority) to COULD (Nice to have)
 ## How to run
 
 Install the dependencies using `npm i` and run `npm start` in both `backend` and `front` directories two start the api and the frontend.
+If it runs but doesn't list any projects on the frontend maybe there's a bug to be fixed 🤔
