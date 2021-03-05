@@ -2,15 +2,14 @@
 
 The main purpose of this challenge is to evaluate the ability to add functionality to an existing codebase following the pre-existent stack and design patterns.
 
-On the backend you will find a node.js 3-layer architecture (you may want to read more about it at https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf). The database layer was mocked with a model that reads and writes from/to a local object as it is not the main purpose of this challenge (you are free to replace by a Sequelize, Mongoose or any other tool). You can extend the existing API as you need in order to fit your needs.
+On the backend you will find a node.js 3-layer architecture (you may want to read more about it at https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf - read 3 layer architecture section and ignore the rest). The database layer was mocked with a model that reads and writes from/to a local object as it is not the main purpose of this challenge (you are free to replace by a Sequelize, Mongoose or any other tool). You can extend the existing API as you need in order to fit your needs.
 
 On the frontend you will find a React/Redux project using:
 
-- Material-UI as component library and theme provider (https://material-ui.com/getting-started/usage/)
-- Reselect as selector library (https://github.com/reduxjs/reselect)
-- Styled-Components as CSS-in-JS tool (https://styled-components.com)
-- redux-promise-middleware to handle redux promise actions (https://github.com/pburtchaell/redux-promise-middleware/blob/main/docs/introduction.md)
-- Atomic Design as a methodology for creating design systems https://bradfrost.com/blog/post/atomic-web-design/. Not applied to the current codebase. Using atomic design is not mandatory, please evaluate the level of complexity of your project.
+- Material-UI as component library and theme provider (https://material-ui.com/getting-started/usage/) - don't spend to much time on this but consider using components from this library if necessary (buttons, lists etc.)
+- Reselect as selector library (https://github.com/reduxjs/reselect) - spend some time on this one
+- Styled-Components as CSS-in-JS tool (https://styled-components.com) - Use styled-components to write css.
+- redux-promise-middleware to handle redux promise actions (https://github.com/pburtchaell/redux-promise-middleware/blob/main/docs/introduction.md) - spend some time on this one. You'll find a 'FETCH_PROJECTS_FULLFILLED' action on projects reducer that was dispatched as 'FETCH_PROJECTS', and this library is the answer for it.
 
 Please avoid using patterns/libraries that overlap the purpose of the existing ones.
 
@@ -33,4 +32,4 @@ The priority of the tasks goes from MUST (High Priority) to COULD (Nice to have)
 ## How to run
 
 Install the dependencies using `npm i` and run `npm start` in both `backend` and `front` directories two start the api and the frontend.
-If it runs but doesn't list any projects on the frontend maybe there's a bug to be fixed 🤔
+If it runs but doesn't list any projects on the frontend maybe there's a bug to be fixed 🤔 (HINT: try to understand the behaviour of FETCH_PROJECTS_FULLFILLED and FETCH_PROJECT_FULFILLED at the projects reducer, something tricky is happening there)
