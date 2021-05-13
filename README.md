@@ -30,4 +30,6 @@ The priority of the tasks goes from MUST (High Priority) to COULD (Nice to have)
 
 ## How to run
 
+The package.json was written to run on a UNIX environment. If you are working on a Windows environment please rewrite both package.json files properly.
+
 Install the dependencies using `npm i` and run `npm start` in both `backend` and `front` directories two start the api and the frontend.
