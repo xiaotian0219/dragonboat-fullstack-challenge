@@ -9,7 +9,6 @@ On the frontend you will find a React/Redux project using:
 - Material-UI as component library and theme provider (https://material-ui.com/getting-started/usage/) - don't spend to much time on this but consider using components from this library if necessary (buttons, lists etc.)
 - Reselect as selector library (https://github.com/reduxjs/reselect) - spend some time on this one
 - Styled-Components as CSS-in-JS tool (https://styled-components.com) - Use styled-components to write css.
-- redux-promise-middleware to handle redux promise actions (https://github.com/pburtchaell/redux-promise-middleware/blob/main/docs/introduction.md) - spend some time on this one. You'll find a 'FETCH_PROJECTS_FULLFILLED' action on projects reducer that was dispatched as 'FETCH_PROJECTS', and this library is the answer for it.
 
 Please avoid using patterns/libraries that overlap the purpose of the existing ones.
 
@@ -23,7 +22,7 @@ The priority of the tasks goes from MUST (High Priority) to COULD (Nice to have)
 
 - The user must be able to add a new project using a form displayed as a dialog or a drawer
 
-- The user must be able to edit a project using a form displayed as a dialog or a drawer
+- The user should be able to edit a project using a form displayed as a dialog or a drawer
 
 - The user could be able to sort the table by id or title
 
@@ -32,4 +31,3 @@ The priority of the tasks goes from MUST (High Priority) to COULD (Nice to have)
 ## How to run
 
 Install the dependencies using `npm i` and run `npm start` in both `backend` and `front` directories two start the api and the frontend.
-If it runs but doesn't list any projects on the frontend maybe there's a bug to be fixed 🤔 (HINT: try to understand the behaviour of FETCH_PROJECTS_FULLFILLED and FETCH_PROJECT_FULFILLED at the projects reducer, something tricky is happening there)

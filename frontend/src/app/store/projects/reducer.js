@@ -1,4 +1,4 @@
-import { FETCH_PROJECT_FULFILLED, FETCH_PROJECTS_FULFILLED } from "./types";
+import { FETCH_PROJECT, FETCH_PROJECTS } from "./types";
 
 const initialState = {
   byId: {},
@@ -7,7 +7,7 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_PROJECT_FULFILLED: {
+    case FETCH_PROJECTS: {
       const data = action.payload || [];
       return {
         ...state,
@@ -15,7 +15,7 @@ const reducer = (state = initialState, action) => {
         ids: data.map((p) => p.id),
       };
     }
-    case FETCH_PROJECTS_FULFILLED: {
+    case FETCH_PROJECT: {
       const data = action.payload;
 
       if (!data) return state;
