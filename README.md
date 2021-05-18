@@ -15,17 +15,11 @@ Please avoid using patterns/libraries that overlap the purpose of the existing o
 
 The priority of the tasks goes from MUST (High Priority) to COULD (Nice to have)
 
-- The user must be able to view a table of projects. Each project must have an `id`, `title`, `author`, `start_date`, `end_date`
+- The user must be able to view a list of projects. Each project must have an `id`, `title`, `author`, `start_date`, `end_date`
 
 - The user must be able to delete a project
 
-- The user must be able to add a new project using a form displayed as a dialog or a drawer
-
-- The user should be able to edit a project using a form displayed as a dialog or a drawer
-
-- The user could be able to sort the table by id or title
-
-- The user could be able to view tasks, which are children of Projects (1 project has multiple tasks) and have the same attributes as Projects (display tasks in the way you find better in terms of UI/UX)
+- The user must be able to add and edit a new project using a form displayed as a dialog or a drawer
 
 ## How to run
 
