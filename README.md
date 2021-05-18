@@ -13,13 +13,11 @@ Please avoid using patterns/libraries that overlap the purpose of the existing o
 
 ## Challenge Tasks
 
-The priority of the tasks goes from MUST (High Priority) to COULD (Nice to have)
-
 - The user must be able to view a list of projects. Each project must have an `id`, `title`, `author`, `start_date`, `end_date`
 
 - The user must be able to delete a project
 
-- The user must be able to add and edit a new project using a form displayed as a dialog or a drawer
+- The user must be able to add and edit a project
 
 ## How to run
 
