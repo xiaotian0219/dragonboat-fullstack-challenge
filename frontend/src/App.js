@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import styled from "styled-components";
-import { withTheme } from "@material-ui/core/styles";
+import styled from 'styled-components'
+import { withTheme } from '@material-ui/core/styles'
 
-import ProjectsList from "./app/features/ProjectsList";
+import ProjectsList from './app/features/ProjectsList'
 
 const App = (props) => {
   return (
@@ -12,8 +12,8 @@ const App = (props) => {
         <ProjectsList />
       </Content>
     </Wrapper>
-  );
-};
+  )
+}
 
 const Wrapper = styled.div`
   &&&& {
@@ -22,16 +22,16 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 15px 0 0;
     padding: 0;
   }
-`;
+`
 
 const Content = withTheme(styled.div`
   min-width: 1024px;
   max-width: 100%;
   padding: 20px;
   background-color: ${({ theme }) => theme.palette.background.grey};
-`);
+`)
 
-export default withTheme(App);
+export default withTheme(App)
